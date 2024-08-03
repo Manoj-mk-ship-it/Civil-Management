@@ -1,0 +1,27 @@
+<!--One way data binding-->
+<p>{{Firstname}}  {{Lastname}}</p>
+
+<!--Property binding-->
+<p [innerText]="Propertybind"></p>
+
+<!--Two way data binding-->
+<p>{{Twowaybind}}</p>
+<input type="text" [(ngModel)]="Twowaybind">
+
+
+
+<!--String Interpolation-->
+<!-- We can do some string operations in string interpolation like 
+    calling function inside {{functioncall()}}-->
+<p>100 x 80 ={{100*80}}</p>
+<p>{{calculate()}}</p>
+<p>Largest among the two numbers : {{getMax(200,100)}}</p>
+<!--We can also use string interpolation for css -->
+<!--the previous line means that we can use string interpolation
+    for giving the value to a property example style.color={{red}}-->
+<p style.color="{{color}}">This is red</p>
+
+<!-- Event binding -->
+<p>You have clicked {{count}}</p>
+<button (click)="clickMe()">Click</button>
+

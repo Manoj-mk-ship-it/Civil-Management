@@ -1,0 +1,34 @@
+<p>{{title}}</p>
+<ul>
+    <li *ngFor="let list of myList">
+        {{list}}
+    </li>
+    <li *ngFor="let list of moviesObject">
+        {{list.title}}&nbsp;&nbsp;{{list.director}}
+    </li>
+</ul>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        {{title}}
+    </div>
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>S No</th>
+                        <th>Movie Name</th>
+                        <th>Director</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let movie of moviesObject;let i=index">
+                        <td>{{i+1 }}</td>
+                        <td>{{movie.title}}</td>
+                        <td>{{movie.director}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

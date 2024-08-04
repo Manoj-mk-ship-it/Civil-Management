@@ -1,0 +1,48 @@
+<div class="container">
+    <h1>BRICK CALCULATOR</h1>
+    <form (ngSubmit)="calculate()">
+        <div class="form-group">
+            <label for="unit">Unit</label>
+            <select id="unit" name="unit" class="form-control">
+                <option value="feet-inch">Feet/Inch</option>
+                <option value="meter">Meter</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="wall-dimension">Enter Wall Dimension</label>
+            <input type="text" id="wall-dimension" name="wall-dimension" class="form-control" placeholder="Example: 10 &times; 10">
+        </div>
+        
+        
+        <div class="form-group">
+            <label for="wall-thickness">Wall Thickness</label>
+            <select id="wall-thickness" name="wall-thickness" class="form-control">
+                <option value="23cm-wall">23 CM Wall</option>
+                <option value="20cm-wall">20 CM Wall</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="cement-sand-ratio">Ratio</label>
+            <select id="cement-sand-ratio" name="cement-sand-ratio" class="form-control">
+                <option value="1:4">C.M 1:4</option>
+                <option value="1:5">C.M 1:5</option>
+                <option value="1:6">C.M 1:6</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="brick-size">Size of Brick</label>
+            <div class="input-group">
+                <input type="text" id="brick-length" name="brick-length" class="form-control small-input" placeholder="length">
+                <span class="input-unit">inches</span>
+                <input type="text" id="brick-width" name="brick-width" class="form-control small-input" placeholder="width">
+                <span class="input-unit">inches</span>
+                <input type="text" id="brick-height" name="brick-height" class="form-control small-input" placeholder="height">
+                <span class="input-unit">inches</span>
+            </div>
+        </div>
+        <div class="form-group button-group">
+            <button type="button" class="submitbutton calculate" (click)="calculate()">Calculate</button>
+            <button type="reset" class="submitbutton reset">Reset</button>
+        </div>
+    </form>
+</div>

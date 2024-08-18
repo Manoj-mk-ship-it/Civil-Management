@@ -1,0 +1,79 @@
+.main{
+    width: 600px;
+    height: 300px;
+    margin-top: 70px;
+    margin-left: 70px;
+    background-color: white;
+    position: fixed;
+}
+.head{
+    margin-left: 50px;
+    margin-top: 15px;
+    color: green;
+}
+.lab{
+    margin-left: 80px;
+    margin-top: 10px;
+    position: fixed;
+}
+.unit{
+    margin-left: 150px;
+    margin-top: 10px;
+    width: 320px;
+}
+
+.lab2{
+    margin-left: 55px;
+    margin-top: 30px;
+    position: fixed;
+}
+.length{
+    margin-left: 150px;
+    margin-top: 30px;
+    width: 200px;
+}
+
+.lab3{
+    margin-left: 60px;
+    margin-top: 30px;
+    position: fixed;
+}
+.width{
+    margin-left: 150px;
+    margin-top: 30px;
+    width: 200px;
+}
+
+.lab4{
+    margin-left: 60px;
+    margin-top: 30px;
+    position: fixed;
+}
+.depth{
+    margin-left: 150px;
+    margin-top: 30px;
+    width: 200px;
+}
+
+
+.calc{
+    width: 400px;
+    height: 250px;
+    background-color: white;
+    position: fixed;
+    margin-left: 850px;
+    margin-top: 100px;
+}
+
+.tothead{
+    position: fixed;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.disptot{
+    color: red;
+    position: fixed;
+    margin-top: 80px;
+    margin-left: 155px;
+}

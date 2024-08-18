@@ -1,0 +1,97 @@
+<!-- <form class="form" (ngSubmit)="calculate()" #steelform="ngForm">
+    <div class="steel">
+      <label for="squarefeet" class="squarefeet">Enter the build dimensions (sq. feet)</label>&nbsp;&nbsp;
+      <input 
+        type="number"  
+        id="squarefeet" 
+        name="squarefeet" 
+        placeholder="ex: 1000" 
+        [(ngModel)]="sqft" 
+        min="1" 
+        required 
+        #sqftModel="ngModel"
+        (input)="onInputChange()" 
+      />
+      <label for="in-squarefeet">sq. ft</label>
+      <div *ngIf="formSubmitted && sqftModel.invalid">
+        <span *ngIf="formSubmitted && sqftModel.errors?.['required']">Input not entered.</span>
+        <span *ngIf="formSubmitted && sqftModel.errors?.['min']">Value must be at least 1.</span>
+      </div>
+      <br>
+      <label for="floors" class="floors">No. of floors</label>&nbsp;&nbsp;
+      <input 
+        type="number" 
+        id="floors" 
+        name="floors" 
+        placeholder="ex: 2" 
+        [(ngModel)]="floors" 
+        min="1" 
+        required 
+        #floorsModel="ngModel"
+        (input)="onInputChange()" 
+      />
+      <div *ngIf="formSubmitted && floorsModel.invalid">
+        <span *ngIf="formSubmitted && floorsModel.errors?.['required']">Input not entered.</span>
+        <span *ngIf="formSubmitted && floorsModel.errors?.['min']">Value must be at least 1.</span>
+      </div>
+      <br>
+      <button type="submit" class="calculate">Calculate</button>
+      <button type="button" class="add-to-project" (click)="addToProject()">Add to Project</button>
+    </div>
+    <div *ngIf="showKgs">
+      <label>Steel required: {{ tons }} tons</label><br>
+      <label>In Tons :{{kgs}} kgs</label>
+    </div>
+  </form> -->
+<form class="form-container" (ngSubmit)="calculate()" #steelform="ngForm">
+  <div class="form-group">
+      <label for="squarefeet" class="form-label">Enter the build dimensions (sq. feet)</label>
+      <input 
+          type="number"  
+          id="squarefeet" 
+          name="squarefeet" 
+          placeholder="ex: 1000" 
+          [(ngModel)]="sqft" 
+          min="1" 
+          required 
+          class="form-input"
+          #sqftModel="ngModel"
+          (input)="onInputChange()" 
+      />
+      <label for="in-squarefeet" class="form-unit">sq. ft</label>
+      <div *ngIf="formSubmitted && sqftModel.invalid" class="error-message">
+          <span *ngIf="sqftModel.errors?.['required']">Input not entered.</span>
+          <span *ngIf="sqftModel.errors?.['min']">Value must be at least 1.</span>
+      </div>
+  </div>
+
+  <div class="form-group">
+      <label for="floors" class="form-label">No. of floors</label>
+      <input 
+          type="number" 
+          id="floors" 
+          name="floors" 
+          placeholder="ex: 2" 
+          [(ngModel)]="floors" 
+          min="1" 
+          required 
+          class="form-input"
+          #floorsModel="ngModel"
+          (input)="onInputChange()" 
+      />
+      <div *ngIf="formSubmitted && floorsModel.invalid" class="error-message">
+          <span *ngIf="floorsModel.errors?.['required']">Input not entered.</span>
+          <span *ngIf="floorsModel.errors?.['min']">Value must be at least 1.</span>
+      </div>
+  </div>
+
+  <div class="button-group">
+      <button type="submit" class="btn-submit">Calculate</button>
+      <button type="button" class="btn-add-project" (click)="addToProject()">Add to Project</button>
+  </div>
+
+  <div *ngIf="showKgs" class="result">
+      <label>Steel required: {{ tons }} tons</label><br>
+      <label>In Tons: {{ kgs }} kgs</label>
+  </div>
+</form>

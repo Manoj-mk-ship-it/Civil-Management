@@ -1,0 +1,94 @@
+/* Custom CSS */
+
+/* Common container styles for both components */
+.container {
+    max-width: 600px;
+    position: relative;
+    top: 50px;
+    
+}
+
+/* Form group styling */
+.form-group label {
+    font-weight: bold;
+}
+
+.input-group-text {
+    background-color: #e9ecef;
+    border: none;
+}
+
+.invalid-feedback {
+    color: red;
+    font-size: 0.875em;
+}
+
+.btn {
+    min-width: 120px;
+}
+
+/* Alert box styling */
+.alert {
+    font-size: 1rem;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.alert-heading {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Specific styles for paintcomp */
+
+.paint {
+    background-color: #f8f9fa; /* Light gray background similar to brickscomp */
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.paint .form-group {
+    margin-bottom: 20px;
+}
+
+.paint .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.paint .input-group {
+    margin-bottom: 10px;
+}
+
+.paint .input-group-append {
+    border-left: 0;
+}
+
+.paint .invalid-feedback {
+    margin-top: 5px;
+}
+
+.paint .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.paint .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}

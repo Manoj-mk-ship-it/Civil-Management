@@ -1,0 +1,35 @@
+/* Custom CSS */
+
+.container {
+    max-width: 600px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.input-group-text {
+    background-color: #e9ecef;
+    border: none;
+}
+
+.invalid-feedback {
+    color: red;
+    font-size: 0.875em;
+}
+
+.btn {
+    min-width: 120px;
+}
+
+.alert {
+    font-size: 1rem;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.alert-heading {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}

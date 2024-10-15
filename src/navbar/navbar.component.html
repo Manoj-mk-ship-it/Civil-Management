@@ -1,0 +1,100 @@
+<!-- <h1>navbar works!  {{title}}</h1>
+<br>
+<h1>{{get_title()}}</h1>
+<br>
+<h2>80 X 2 = {{80 * 2}}</h2>
+
+<h2>{{getMax(32,21)}}</h2>
+<input type="text" [(ngModel)]='hello'> -->
+
+<!--<div class="whole">
+    <div class="dropdown1">
+        <button class="qualest">Quantity Estimator</button>
+        <div class="qualest-content">
+            <div class="column col1">
+                <a href="#">Brick Calculator</a>
+                <a href="#">Concrete Block Calculator</a>
+                <a href="#">PCC Calculator</a>
+                <a href="#">RCC Calculator</a>
+            </div>
+            <div class="column col2">
+                <a routerLink="/navbar/cemcon" routerLinkActive="active">Cement Concrete Calculator</a>
+                <a href="#">Paint Work Calculator</a>
+                <a href="#">Flooring Calculator</a>
+                <a href="#">Stair Case Calculator</a>
+            </div>
+        </div>
+    </div>
+</div>-->
+<!--<button [disabled]="isdis">click</button>
+
+<button (click)="clickcounter()" [disabled]="isdis">click</button>
+<h3>{{count}}</h3>
+
+<input type="text" (input)="assign($event)">
+<h3>{{val}}</h3>
+
+<h3 *ngFor = "let i of numberex">{{i}}</h3>
+
+<input type="text" [(ngModel)]="numtest" (input)="ch($event)">
+
+<div [ngSwitch]="numtest">
+    <div *ngSwitchCase="1">One</div>
+    <div *ngSwitchCase="2">Two</div>
+    <div *ngSwitchCase="3">Three</div>
+    <div *ngIf="checkn" >Greater than three</div>
+</div>
+<br><Br>
+<input type="checkbox" [(ngModel)]="enablecolor">
+<h3 [ngClass]="{'example':enablecolor}">sample</h3>
+
+<button class="start" (click)="countdownstart()">Start</button>
+<div class="count">
+    <h1>
+        {{display()}}
+    </h1>
+</div>-->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary nav">
+    <div class="container-fluid navdiv">
+      <a class="navbar-brand" href="#">Civil</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <div class="container-fluid dropdown1">
+              <button class="nav-link active qualest" aria-current="page">Quantity Estimator</button>
+              <div class="container-fluid qualest-content">
+                  <div class="container-fluid column col1">
+                      <a href="#">Brick Calculator</a>
+                      <a href="#">Concrete Block Calculator</a>
+                      <a href="#">PCC Calculator</a>
+                      <a href="#">RCC Calculator</a>
+                  </div>
+                  <div class="container-fluid column col2">
+                      <a routerLink="/navbar/cemcon" routerLinkActive="active">Cement Concrete Calculator</a>
+                      <a href="#">Paint Work Calculator</a>
+                      <a href="#">Flooring Calculator</a>
+                      <a href="#">Stair Case Calculator</a>
+                  </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link qualest">Features</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link qualest">Pricing</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link disabled qualest" aria-disabled="true">Disabled</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <router-outlet></router-outlet>

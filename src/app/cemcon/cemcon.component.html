@@ -1,0 +1,25 @@
+<div class="main">
+    <h4 class="head">Cement Concrete Calculation</h4>
+    <h5 class="lab"> Unit: </h5>
+    <select name="units" class="unit">
+        <option value="METER/CM">Meter/CM</option>
+        <option value="FEET/INCH">Feet/Inch</option>
+    </select>
+
+    <h5 class="lab2">Length: </h5>
+    <input type="text" class="length" (input)="assignlen($event)">
+
+    <h5 class="lab3">Width: </h5>
+    <input type="text" class="width" (input)="assignwid($event)">
+
+    <h5 class="lab4">Depth: </h5>
+    <input type="text" class="depth" (input)="assigndep($event)">
+    
+</div>
+
+<div *ngIf="disp" class="calc">
+    <h5 class="tothead">Total Volume of Cement Concrete</h5>
+    <h4 class="disptot">{{total}} m<sup>3</sup></h4>
+</div>
+
+<!--<img src="\1713707502593.jpg" >-->
